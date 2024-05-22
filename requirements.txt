@@ -1,0 +1,32 @@
+# Data handling and preprocessing
+pandas
+numpy
+scikit-learn
+imblearn
+shap
+ucimlrepo
+
+# Model training and evaluation
+joblib
+mlflow
+xgboost
+
+# Synthetic data generation
+sdv
+
+# API development
+fastapi
+uvicorn
+pydantic
+
+# Monitoring
+prometheus-client
+
+# CI/CD and Docker
+pytest
+
+# Deployment
+docker
+
+# Miscellaneous
+requests

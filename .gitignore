@@ -6,6 +6,25 @@ __pycache__/
 # C extensions
 *.so
 
+# Data files
+data/
+*.csv
+*.json
+*.sqlite
+*.sqlite3
+*.xls
+*.xlsx
+*.db
+*.h5
+*.npy
+*.pkl
+*.pickle
+*.pklz
+*.pkl.gz
+*.pkl.bz2
+*.pkl.xz
+*.pkl.zst
+
 # Distribution / packaging
 .Python
 build/
