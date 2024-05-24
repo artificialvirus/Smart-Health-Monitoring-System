@@ -20,11 +20,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+
       - name: Build Docker image
-        run: docker build -t smart-health-monitor .
+        run: docker build -t alperond/smart-health-monitor:latest .
 
       - name: Push Docker image
-        run: docker push your-docker-repo/smart-health-monitor
+        run: docker push alperond/smart-health-monitor:latest
 
       - name: Clean up Docker
         run: |
