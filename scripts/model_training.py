@@ -1,10 +1,14 @@
 # File: /scripts/model_training.py
 # This file will contain the code for training the model
+import os
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
 import joblib
+
+# Ensure the models directory exists
+os.makedirs('models', exist_ok=True)
 
 # Load preprocessed data
 X_heart_train = np.load('data/X_heart_train.npy')

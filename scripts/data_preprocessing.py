@@ -16,8 +16,8 @@ heart_data['ca'] = heart_data['ca'].astype(float)
 heart_data['thal'] = heart_data['thal'].astype(float)
 
 # Split features and targets
-X_heart = heart_data.drop('target', axis=1)
-y_heart = heart_data['target']
+X_heart = heart_data.drop('num', axis=1)
+y_heart = heart_data['num']
 X_diabetes = diabetes_data.drop('Outcome', axis=1)
 y_diabetes = diabetes_data['Outcome']
 
